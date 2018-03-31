@@ -22,7 +22,7 @@ let Calculadora = {
     },
     dividir: (num1, num2) => {
 
-        if(isNaN(num1) || isNaN(num2)){
+        if (isNaN(num1) || isNaN(num2)) {
             return 0
         }
 
@@ -33,8 +33,14 @@ let Calculadora = {
         return num1 / num2
 
     },
-    multiplica: (num1, num2) => {
-        return 0
+    multiplicar: (num1, num2) => {
+
+        if (isNaN(num1) || isNaN(num2)) {
+            return 0
+        }
+
+        return num1 * num2
+
     },
 }
 
